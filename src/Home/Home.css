@@ -4,37 +4,41 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content:start;
-  align-items:center;
+  flex-wrap: no-wrap;
+  justify-content:center;
   height: 100vh;
-  line-height: 1.5rem;
+  align-items:center;
+  line-height: 0rem;
+  text-align: center;
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
   font-weight: bold;
+  padding: 80px 50px 100px 50px;
 }
 
 .unicorn {
   height: 38vh;
 }
 
-.unicorn-container {
+/* .unicorn-container {
   width: 80vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1rem;
   margin: 10px;
-}
+  object-fit: contain;
+} */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .start-game-button {
@@ -43,21 +47,27 @@ p {
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
   font-weight: bold;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.start-game-button:hover {
-  border: purple 50px;
+span {
+  -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
   cursor:grab;
 }
 
-@media (max-width: 650px) {
+.start-game-button:hover {
+  -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+  cursor:grab;
+}
+
+@media (max-width: 720px) {
   .home {
     height: 100vh;
     padding: 0;
-  }
-
-  .unicorn-container {
-    height: 100vh;
+    line-height: 1em;
   }
 
   .unicorn {
@@ -65,10 +75,12 @@ p {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2em;
+    line-height: 1.2em;
   }
   
   p {
-    font-size: 1rem;
+    font-size: 1em;
+    width: 95vw;
   }
 }
