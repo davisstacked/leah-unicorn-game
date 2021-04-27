@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.13.16",
-    "@craco/craco": "^6.1.1",
-    "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -18,6 +15,8 @@
     "react-hotkeys": "^2.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "use-sound": "^2.1.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
