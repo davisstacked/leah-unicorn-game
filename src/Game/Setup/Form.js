@@ -8,7 +8,7 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
         onSubmit={handleSubmit}
       >
         <h3 className="gameSettings">Game Settings</h3>
-        <div className="nameOptionsContainer">
+        <div className="nameOptions">
           <label htmlFor="name">
             Name
           </label>
@@ -24,7 +24,7 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
             <option value="Rarity">Rarity</option>
           </select>
         </div>
-        <div className="difficultyOptionsContainer">
+        <div className="difficultyOptions">
           <label htmlFor="size">
             Difficulty
           </label>
@@ -36,6 +36,21 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
             max={10}
             onChange={handleChange}
             value={formData.difficulty}
+          />
+        </div>
+        <div className="mazeSizeOptions">
+          <label htmlFor="size">
+            Maze Size
+          </label>
+          <input
+            className="selfEnd"
+            type="range"
+            id="size"
+            name="size"
+            min={15}
+            max={25}
+            onChange={handleChange}
+            value={formData.size}
           />
         </div>
         <button className="startGameButton">
