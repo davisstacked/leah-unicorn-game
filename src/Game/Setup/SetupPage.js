@@ -25,11 +25,16 @@ const SetupPage = () => {
 
   return (
     <div>
+      <h1>Game Setup</h1>
       <div>
-        <SmallUnicorn />
-        <p>Help the Unicorn navigate the maze towards the Rainbow.
+        <p>Help the Unicorn navigate the maze towards the Rainbow!
         </p>
-        <img src={Maze} alt="maze" />
+        <SmallUnicorn />
+        <img
+          src={Maze}
+          alt="maze"
+          height="200"
+        />
         <p>Beware of the Skull Monster! 💀
         </p>
       </div>
