@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import GameContext from '../Context/GameContext';
+import SetupPage from "./Setup/SetupPage";
 
 const Game = () => {
+  const { gameData } = useContext(GameContext);
   return (
     <div>
-      <h1>Hello World!</h1>
+      {gameData.status === "setup" && <SetupPage />}
     </div>
-  )
-}
+  );
+};
 
 export default Game;
