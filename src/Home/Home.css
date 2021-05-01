@@ -1,5 +1,5 @@
 .home {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background-image: url('../Assets/Imgs/rainbow-landscape-1.jpeg');
   background-size: cover;
   display: flex;
@@ -7,18 +7,23 @@
   flex-wrap: no-wrap;
   justify-content:center;
   height: 100vh;
-  align-items:center;
-  line-height: 0rem;
+  /* align-items:center; */
+  /* line-height: 0rem; */
   text-align: center;
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
   font-weight: bold;
-  padding: 80px 50px 100px 50px;
+  /* padding: 80px 50px 100px 50px; */
 }
 
-.unicorn {
-  height: 38vh;
+.react-floater-animated {
+  display: flex;
+  justify-content: center;
 }
+
+/* .unicorn {
+  height: 38vh; 
+} */
 
 h1 {
   font-size: 2.5rem;
@@ -50,7 +55,7 @@ box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10
   cursor:grab;
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .home {
     height: 100vh;
     padding: 0;
@@ -70,4 +75,4 @@ box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10
     font-size: 1em;
     width: 95vw;
   }
-}
+} */
