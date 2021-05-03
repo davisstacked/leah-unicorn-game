@@ -7,8 +7,7 @@
   flex-wrap: no-wrap;
   justify-content:center;
   height: 100vh;
-  /* align-items:center; */
-  /* line-height: 0rem; */
+
   text-align: center;
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
@@ -35,7 +34,7 @@ p {
 
 .start-game-button {
   background-image: linear-gradient(pink, yellow);
-  font-size: xx-large;
+  font-size: x-large;
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
   font-weight: bold;
@@ -46,7 +45,6 @@ p {
 span {
   -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
-  cursor:grab;
 }
 
 .start-game-button:hover {
