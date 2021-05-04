@@ -31,9 +31,9 @@ const SetupPage = () => {
         </p>
         <SmallUnicorn />
         <img
+          className="h-40"
           src={Maze}
           alt="maze"
-          height="200"
         />
         <p>Beware of the Skull Monster! 💀
         </p>
