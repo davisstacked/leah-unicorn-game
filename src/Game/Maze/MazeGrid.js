@@ -42,7 +42,7 @@ const MazeGrid = () => {
 
     getMazeId({
       "maze-width": parseInt(gameData.size),
-      "maze-height": parseInt(gameData.size);
+      "maze-height": parseInt(gameData.size),
       "maze-player-name": gameData.name,
       difficulty: parseInt(gameData.difficulty),
     });
