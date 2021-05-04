@@ -8,7 +8,7 @@ const Game = () => {
   return (
     <div>
       {gameData.status === "setup" && <SetupPage />}
-      {}
+      {gameData.status === "active" && <MazeWrapper />}
     </div>
   );
 };

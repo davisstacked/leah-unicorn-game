@@ -20,7 +20,7 @@ const SetupPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setGameData({ ...formData, status: "active" });
-    setFormData(initialState);
+    // setFormData(initialState);
   };
 
   return (

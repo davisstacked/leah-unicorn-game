@@ -4,6 +4,7 @@ import UnicornApi from "../../API/UnicornApi";
 import { addProps, getSpritePositions } from "./MazeHelpers";
 import { v4 as uuid } from "uuid";
 import GridCell from "./GridCell";
+import "./Maze.css"
 import MoveButtons from "./Buttons/MoveButtons";
 import Keys from "../Hotkeys/Handlers";
 import MoveContext from "../../Context/MoveContext";
@@ -79,13 +80,15 @@ const MazeGrid = () => {
             className="Maze-grid mx-auto text-center bg-white bg-opacity-80"
             style={gridStyle}
           >
-            {mazeGrid.map((arr) => {
-              <GridCell
+              {mazeGrid.map((arr) => {
+                return (
+                <GridCell
                 key={uuid()}
                 borders={arr.slice(0, arr.length)}
                 index={arr[arr.length - 1]}
                 spritePositions={spritePositions}
-              />
+              />            
+              )
             })}
           </div>
         )}

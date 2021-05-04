@@ -53,8 +53,9 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
             value={formData.size}
           />
         </div>
-        <button className="startGameButton">
-          Start Game!
+        <button
+          className="startGameButton">
+          Start Game!{" "}
         </button>
       </form>
     </div>
