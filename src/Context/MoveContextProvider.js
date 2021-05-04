@@ -36,4 +36,50 @@ const MoveContextProvider = ({ children }) => {
     };
     move({ direction });
   }
-}
+  
+  // updates positions of sprites following a move
+  const updatePositions = async () => {
+    try {
+      const res = await UnicornApi.getMazeCurrentState(mazeId);
+      setSpritePositions(getSpritePositions(res));
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  
+  // checks if game is won or lost
+  const checkForGameOver = (res) => {
+    if (res.state === 'won') {
+      playGameWon();
+      setGameData({ ...gameData, status: "won" });
+    } else if (res.state === 'over') {
+      playGameOver();
+      setGameData({ ...gameData, status: 'over' });
+    }
+  };
+    
+  return (
+    <MoveContext.Provider
+      value={{
+        handleMove,
+        updatePositions,
+        checkForGameOver,
+        mazeId,
+        setMazeId,
+        spritePositions,
+        setSpritePositions
+      }}
+    >
+      {children}
+    </MoveContext.Provider>
+  )
+};
+
+export default MoveContextProvider;
+
+
+
+
+
+
+
