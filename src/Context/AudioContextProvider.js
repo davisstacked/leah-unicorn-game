@@ -22,7 +22,7 @@ const AudioContextProvider = ({ children }) => {
   return (
 
     <AudioContext.Provider
-      value={{ playIllegal, playLegal, playGameOver, }}
+      value={{ playIllegal, playLegal, playGameOver, playGameWon}}
     >
       {children}
     </AudioContext.Provider>
