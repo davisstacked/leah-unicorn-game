@@ -68,5 +68,30 @@ const MazeGrid = () => {
     setUpNewMaze();
   }, [mazeId, setSpritePositions, gameData.size]);
 
-  
-}
+  return (
+    <>
+      <Keys>
+        <MoveButtons handleMove={handleMove} />
+        {isLoading ? (
+          <RotatingHorse />
+        ) : (
+          <div
+            className="Maze-grid mx-auto text-center bg-white bg-opacity-80"
+            style={gridStyle}
+          >
+            {mazeGrid.map((arr) => {
+              <GridCell
+                key={uuid()}
+                borders={arr.slice(0, arr.length)}
+                index={arr[arr.length - 1]}
+                spritePositions={spritePositions}
+              />
+            })}
+          </div>
+        )}
+      </Keys>
+    </>    
+  );
+};
+
+export default MazeGrid;
