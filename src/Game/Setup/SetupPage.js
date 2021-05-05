@@ -26,7 +26,7 @@ const SetupPage = () => {
   };
 
   return (
-    <div className="mt-8 text sm:h-screen bg-clouds flex flex-col items-center text-align">
+    <div className="pt-8 pb-8 text sm:h-screen bg-clouds flex flex-col items-center text-center">
       <h1 className="font-mono text-pink-600 font-black">Game Setup</h1>
       <p>Help the <span className="text-pink-600">UNICORN</span> navigate the <span className="text-pink-600">MAZE</span> towards the <span className="text-pink-600">RAINBOW</span>!
       </p>
@@ -34,14 +34,14 @@ const SetupPage = () => {
         <SmallUnicorn />
         <div className="flex justify-center" >
           <img
-            className="h-40"
+            className="h-36 sm:h-40"
             src={Maze}
             alt="maze"
           />
         </div>
         <SmallRainbow />
       </div>
-        <p className="mt-8 text-2xl">BEWARE OF THE <span className="text-pink-600">SKULL MONSTER</span>! 💀
+        <p className="mt-8 text-2xl">BEWARE OF THE <span className="text-pink-600">SKULL MONSTER</span>! 
         </p>
       <div className="sm:w-3/6 sm:mt-8 flex-col flex sm:flex-row justify-evenly items-center">
         <SmallSkull/>

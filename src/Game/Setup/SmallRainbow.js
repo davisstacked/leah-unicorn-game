@@ -8,7 +8,7 @@ const SmallRainbow = () => {
       <img
         src={Rainbow}
         alt="floating rainbow"
-        className="h-40"
+        className="pt-3 sm:pt-0 h-32 sm:h-40"
       />
     </ReactFloaterJs>
   );

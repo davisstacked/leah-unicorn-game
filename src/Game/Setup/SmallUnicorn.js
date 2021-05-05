@@ -6,7 +6,7 @@ const SmallUnicorn = () => {
   return (
     <ReactFloaterJs>
       <img
-        className="floating-unicorn h-40"
+        className="floating-unicorn pb-4 sm:pb-0 h-32 sm:h-40"
         src={TinyUnicorn}
         alt="small floating unicorn"
       />
