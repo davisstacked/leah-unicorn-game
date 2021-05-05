@@ -43,7 +43,7 @@ const SetupPage = () => {
       </div>
         <p className="mt-8 text-2xl">BEWARE OF THE <span className="text-pink-600">SKULL MONSTER</span>! 
         </p>
-      <div className="sm:w-3/6 sm:mt-8 flex-col flex sm:flex-row justify-evenly items-center">
+      <div className="sm:w-3/6 sm:mt-8 flex-col flex sm:flex-row justify-evenly items-center mb-4">
         <SmallSkull/>
         <Form
           handleSubmit={handleSubmit}
