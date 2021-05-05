@@ -26,11 +26,11 @@ const SetupPage = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-8">
-      <h1 className="font-mono">Game Setup</h1>
-      <p>Help the Unicorn navigate the maze towards the Rainbow!
+    <div className="mt-8 text sm:h-screen bg-clouds flex flex-col items-center text-align">
+      <h1 className="font-mono text-pink-600 font-black">Game Setup</h1>
+      <p>Help the <span className="text-pink-600">UNICORN</span> navigate the <span className="text-pink-600">MAZE</span> towards the <span className="text-pink-600">RAINBOW</span>!
       </p>
-      <div className="mt-8 flex flex-col sm:grid sm:grid-flow-col sm:grid-cols-3">
+      <div className="sm:mt-8 flex flex-col sm:grid sm:grid-flow-col sm:grid-cols-3">
         <SmallUnicorn />
         <div className="flex justify-center" >
           <img
@@ -41,10 +41,10 @@ const SetupPage = () => {
         </div>
         <SmallRainbow />
       </div>
-        <p className="mt-8">Beware of the Skull Monster! 💀
+        <p className="mt-8 text-2xl">BEWARE OF THE <span className="text-pink-600">SKULL MONSTER</span>! 💀
         </p>
-      <div className="mt-8 flex flex-col sm:inline-grid sm:grid-cols-2">
-        <SmallSkull />
+      <div className="sm:w-3/6 sm:mt-8 flex-col flex sm:flex-row justify-evenly items-center">
+        <SmallSkull/>
         <Form
           handleSubmit={handleSubmit}
           handleChange={handleChange}

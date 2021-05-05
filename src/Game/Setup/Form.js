@@ -2,12 +2,12 @@ import React from 'react';
 
 const Form = ({ handleSubmit, handleChange, formData }) => {
   return (
-    <div className="formContainer">
+    <div className="formContainer flex justify-between items-center">
       <form
-        className="form"
+        className="gradient-orchid flex flex-col border-2 border-black rounded p-5 justify-items-center items-center"
         onSubmit={handleSubmit}
       >
-        <h3 className="gameSettings">Game Settings</h3>
+        <h3 className="font-mono text-pink-600 font-black">Game Settings</h3>
         <div className="nameOptions">
           <label htmlFor="name">
             Name

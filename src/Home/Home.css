@@ -1,5 +1,4 @@
 .home {
-  /* box-sizing: border-box; */
   background-image: url('../Assets/Imgs/rainbow-landscape-1.jpeg');
   background-size: cover;
   display: flex;
@@ -12,7 +11,6 @@
   font-family: 'Averia Gruesa Libre', cursive;
   font-family: 'Averia Sans Libre', cursive;
   font-weight: bold;
-  /* padding: 80px 50px 100px 50px; */
 }
 
 .react-floater-animated {
