@@ -2,19 +2,23 @@ import React from 'react';
 
 const Form = ({ handleSubmit, handleChange, formData }) => {
   return (
-    <div className="formContainer flex justify-between items-center">
+    <div className="formContainer flex justify-between items-center shadow-lg">
       <form
-        className="gradient-orchid flex flex-col border-2 border-black rounded p-5 justify-items-center items-center"
+        className="gradient-orchid flex flex-col border-2 border-black rounded p-4 justify-items-center items-center"
         onSubmit={handleSubmit}
       >
-        <h3 className="font-mono text-pink-600 font-black">Game Settings</h3>
-        <div className="nameOptions">
-          <label htmlFor="name">
+        <h3 className="font-mono text-pink-600 font-black mb-2">Game Settings</h3>
+        <div className="flex items-center justify-between mb-2">
+          <label
+            className="mr-5"
+            htmlFor="name"
+          >
             Name
           </label>
           <select
             name="name"
             id="name"
+            className="px-3 py-2 rounded-xl bg-pink-50"
             onChange={handleChange}>
             <option value="Pinkie Pie">Pinkie Pie</option>
             <option value="Twilight Sparkle">Twilight Sparkle</option>
@@ -24,8 +28,10 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
             <option value="Rarity">Rarity</option>
           </select>
         </div>
-        <div className="difficultyOptions">
-          <label htmlFor="size">
+        <div className="flex items-center justify-between mb-2">
+          <label
+            className="mr-2"
+            htmlFor="difficulty">
             Difficulty
           </label>
           <input
@@ -38,8 +44,11 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
             value={formData.difficulty}
           />
         </div>
-        <div className="mazeSizeOptions">
-          <label htmlFor="size">
+        <div className="flex items-center justify-between mb-2">
+          <label
+            className="mr-2"
+            htmlFor="size"
+          >
             Maze Size
           </label>
           <input
@@ -54,7 +63,7 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
           />
         </div>
         <button
-          className="startGameButton">
+          className="gradient-pink px-3 py-2 text-white font-mono rounded shadow-md border-2 border-purple-600 hover:text-black">
           Start Game!{" "}
         </button>
       </form>
