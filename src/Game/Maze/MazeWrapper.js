@@ -35,9 +35,9 @@ const MazeWrapper = () => {
       </p>
       <div className={mazeWidthClasses}>
         <MazeGrid />
-        <div className="mt-6 flex justify-between">
-          <span>Difficulty: {gameData.difficulty}</span>
-          <span>Size: {gameData.size}</span>
+        <div className="flex mt-2 justify-between items-center">
+          <span className="self-start mx-4 bg-gradient-to-r from-purple-400 via-blue-500 to-yellow-500 border-blue-600 text-white p-1 px-3 rounded shadow-xl border-2">Difficulty: {gameData.difficulty}</span>
+          <span className="mx-4 bg-gradient-to-r from-purple-400 via-blue-500 to-yellow-500 border-blue-600 text-white p-1 px-3 rounded shadow-xl border-2">Size: {gameData.size}</span>
         </div>
       </div>
     </div>

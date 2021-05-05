@@ -13,7 +13,7 @@ const Home = () => {
       <p>No, I'm not a privately held startup company valued at over $1 billion</p>
       <p>I'm the real deal, a mystical creature of magic.</p>
       <p>I'm being hunted by a Monster. <i className="far fa-sad-cry fa-lg"></i></p>
-      <p>Can I Trust you to Pilot me safely to the <span>RAINBOW?</span></p>
+      <p>Can I Trust you to Pilot me safely to the <span className="rainbow">RAINBOW?</span></p>
       <Link to="/game">
         <button className="mt-6 start-game-button border-purple-600 text-white px-3 shadow-xl rounded mr-auto">
           Yes! Let's go! 
