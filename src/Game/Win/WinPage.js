@@ -3,6 +3,8 @@ import GameContext from "../../Context/GameContext";
 import { useHistory } from "react-router-dom";
 import WinUnicornImage from "./WinUnicornImage";
 
+import "./WinPage.css";
+
 const WinPage = () => {
   const { playAgain } = useContext(GameContext);
   const history = useHistory();
@@ -14,7 +16,7 @@ const WinPage = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-evenly items-center p-10 h-screen">
+      <div className="win-page flex flex-col justify-evenly items-center p-10 h-screen">
         <div className="font-mono text-xl text-center">
           You reached the rainbow!
         </div>

@@ -27,7 +27,7 @@ const SetupPage = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mt-8">
-      <h1>Game Setup</h1>
+      <h1 className="font-mono">Game Setup</h1>
       <p>Help the Unicorn navigate the maze towards the Rainbow!
       </p>
       <div className="mt-8 flex flex-col sm:grid sm:grid-flow-col sm:grid-cols-3">

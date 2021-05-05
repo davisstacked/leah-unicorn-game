@@ -5,6 +5,8 @@ import MazeWrapper from "./Maze/MazeWrapper";
 import WinPage from "./Win/WinPage";
 import LosePage from './Lose/LosePage';
 
+import "./Game.css";
+
 const Game = () => {
   const { gameData } = useContext(GameContext);
   return (
