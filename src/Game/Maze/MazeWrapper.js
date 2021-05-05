@@ -15,18 +15,12 @@ const MazeWrapper = () => {
     "md:w-11/12 lg:w-10/12 small-cell": gameData.size > 23,
   });
 
-  const cloudDivHeightClasses = classNames({
-    "bg-clouds font-mono text-center": true,
-    "sm: h-screen": gameData.size < 16,
-    "h-full": gameData.size >= 20,
-  });
-
   return (
-    <div className={cloudDivHeightClasses}>
+    <div className="bg-clouds font-mono text-center h-screen sm:h-full">
       <h2 className="pt-10">
         Help <span className="text-pink-600">{gameData.name}</span> reach the rainbow! Move using arrow keys, WASD or buttons.
       </h2>
-      <p className="text-sm pb-10">
+      <p className="text-sm pb-2">
         <ArrowBendUpLeft className="inline" size={24} />
         Back to {" "}
         <button onClick={playAgain} className="underline text-pink-600">
@@ -36,8 +30,8 @@ const MazeWrapper = () => {
       <div className={mazeWidthClasses}>
         <MazeGrid />
         <div className="flex mt-2 justify-between items-center">
-          <span className="self-start mx-4 bg-gradient-to-r from-purple-400 via-blue-500 to-yellow-500 border-blue-600 text-white p-1 px-3 rounded shadow-xl border-2">Difficulty: {gameData.difficulty}</span>
-          <span className="mx-4 bg-gradient-to-r from-purple-400 via-blue-500 to-yellow-500 border-blue-600 text-white p-1 px-3 rounded shadow-xl border-2">Size: {gameData.size}</span>
+          <span className="self-start mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Difficulty: {gameData.difficulty}</span>
+          <span className="mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Size: {gameData.size}</span>
         </div>
       </div>
     </div>
