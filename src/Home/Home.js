@@ -15,7 +15,7 @@ const Home = () => {
       <p>I'm being hunted by a Monster. <i className="far fa-sad-cry fa-lg"></i></p>
       <p>Can I Trust you to Pilot me safely to the <span>RAINBOW?</span></p>
       <Link to="/game">
-        <button className="start-game-button border-purple-600 text-white px-3 shadow-xl rounded mr-auto">
+        <button className="mt-6 start-game-button border-purple-600 text-white px-3 shadow-xl rounded mr-auto">
           Yes! Let's go! 
         </button>
       </Link>

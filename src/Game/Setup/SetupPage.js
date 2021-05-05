@@ -3,6 +3,8 @@ import GameContext from '../../Context/GameContext';
 import Form from './Form';
 import Maze from '../../Assets/Imgs/Maze.png';
 import SmallUnicorn from './SmallUnicorn';
+import SmallRainbow from './SmallRainbow';
+import SmallSkull from './SmallSkull';
 
 const SetupPage = () => {
   const { setGameData } = useContext(GameContext);
@@ -20,29 +22,35 @@ const SetupPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setGameData({ ...formData, status: "active" });
-    // setFormData(initialState);
+    setFormData(initialState);
   };
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center mt-8">
       <h1>Game Setup</h1>
-      <div>
-        <p>Help the Unicorn navigate the maze towards the Rainbow!
-        </p>
+      <p>Help the Unicorn navigate the maze towards the Rainbow!
+      </p>
+      <div className="mt-8 flex flex-col sm:grid sm:grid-flow-col sm:grid-cols-3">
         <SmallUnicorn />
-        <img
-          className="h-40"
-          src={Maze}
-          alt="maze"
-        />
-        <p>Beware of the Skull Monster! 💀
-        </p>
+        <div className="flex justify-center" >
+          <img
+            className="h-40"
+            src={Maze}
+            alt="maze"
+          />
+        </div>
+        <SmallRainbow />
       </div>
-      <Form
-        handleSubmit={handleSubmit}
-        handleChange={handleChange}
-        formData={formData}
-      />
+        <p className="mt-8">Beware of the Skull Monster! 💀
+        </p>
+      <div className="mt-8 inline-grid grid-cols-2">
+        <SmallSkull />
+        <Form
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          formData={formData}
+        />
+      </div>
     </div>
   );
 };
