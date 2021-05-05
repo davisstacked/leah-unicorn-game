@@ -43,7 +43,7 @@ const SetupPage = () => {
       </div>
         <p className="mt-8">Beware of the Skull Monster! 💀
         </p>
-      <div className="mt-8 inline-grid grid-cols-2">
+      <div className="mt-8 flex flex-col sm:inline-grid sm:grid-cols-2">
         <SmallSkull />
         <Form
           handleSubmit={handleSubmit}
