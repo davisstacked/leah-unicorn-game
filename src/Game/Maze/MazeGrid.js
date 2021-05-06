@@ -74,7 +74,7 @@ const MazeGrid = () => {
       <Keys>
         <MoveButtons handleMove={handleMove} />
         {isLoading ? (
-          <RotatingHorse />
+            <RotatingHorse />
         ) : (
           <div
             className="Maze-grid mx-auto text-center bg-white bg-opacity-80"

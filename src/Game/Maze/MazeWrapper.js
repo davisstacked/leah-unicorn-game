@@ -16,24 +16,27 @@ const MazeWrapper = () => {
   });
 
   return (
-    <div className="bg-clouds font-mono text-center h-screen sm:h-full">
-      <h2 className="pt-10">
-        Help <span className="text-pink-600">{gameData.name}</span> reach the rainbow! Move using arrow keys, WASD or buttons.
-      </h2>
-      <p className="text-sm pb-2">
-        <ArrowBendUpLeft className="inline" size={24} />
-        Back to {" "}
-        <button onClick={playAgain} className="underline text-pink-600">
-          setup
-        </button>
-      </p>
-      <div className={mazeWidthClasses}>
-        <MazeGrid />
-        <div className="flex mt-2 justify-between items-center">
-          <span className="self-start mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Difficulty: {gameData.difficulty}</span>
-          <span className="mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Size: {gameData.size}</span>
+    <div className="bg-clouds h-screen sm:h-fill md:h-screen">
+      <div className="flex flex-col justify-center items-center font-mono text-center">
+        <h2 className="pt-10">
+          Help <span className="text-pink-600">{gameData.name}</span> reach the rainbow! Move using arrow keys, WASD or buttons.
+        </h2>
+        <p className="text-sm pb-2">
+          <ArrowBendUpLeft className="inline" size={24} />
+          Back to {" "}
+          <button onClick={playAgain} className="underline text-pink-600">
+            setup
+          </button>
+        </p>
+        <div className={mazeWidthClasses}>
+          <MazeGrid />
+          <div className="flex mt-2 justify-between items-center">
+            <span className="self-start mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Difficulty: {gameData.difficulty}</span>
+            <span className="mx-4 gradient-pink text-white p-1 px-3 rounded shadow-xl border-2">Size: {gameData.size}</span>
+          </div>
         </div>
       </div>
+
     </div>
   );
 };
