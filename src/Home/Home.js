@@ -12,10 +12,10 @@ const Home = () => {
       <UnicornImage />
       <p>No, I'm not a privately held startup company valued at over $1 billion</p>
       <p>I'm the real deal, a mystical creature of magic.</p>
-      <p>I'm being hunted by a Monster. <i className="far fa-sad-cry fa-lg"></i></p>
-      <p>Can I Trust you to Pilot me safely to the <span className="rainbow">RAINBOW?</span></p>
+      <p>I'm being hunted by a <span className="text-pink-600 font-semibold">MONSTER</span>. <i className="far fa-sad-cry fa-lg"></i></p>
+      <p>Can I Trust <span className="text-pink-600 font-semibold">YOU</span> to Pilot me safely to the <span className="text-pink-600 font-semibold">RAINBOW</span>?</p>
       <Link to="/game">
-        <button className="mt-6 start-game-button border-purple-600 text-white px-3 shadow-xl rounded mr-auto">
+        <button className="mt-4 start-game-button shadow-sm text-black text-3xl py-1 px-3 border-2 border-purple-700 rounded gradient-pink">
           Yes! Let's go! 
         </button>
       </Link>

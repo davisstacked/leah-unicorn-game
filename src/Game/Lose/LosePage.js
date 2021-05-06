@@ -27,7 +27,7 @@ const LosePage = () => {
       </div>
       <LittleDeath />
       <button
-        className="lose-game-button shadow-sm text-black text-3xl py-2 px-3 border-2 border-purple-700 rounded gradient-pink hover:text-white"
+        className="game-button shadow-sm text-black text-3xl py-2 px-3 border-2 border-purple-700 rounded gradient-pink hover:text-white"
         onClick={handlePlayAgain}
       >
         Play Again?

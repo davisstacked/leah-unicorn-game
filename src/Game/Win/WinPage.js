@@ -22,7 +22,7 @@ const WinPage = () => {
         </h1>
         <WinUnicornImage />
         <button
-          className="win-game-button shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink text text-3xl"
+          className="game-button shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink text text-3xl"
           onClick={handlePlayAgain}
         >
           Play Again!
