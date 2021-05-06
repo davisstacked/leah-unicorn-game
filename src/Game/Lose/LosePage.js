@@ -3,6 +3,8 @@ import GameContext from "../../Context/GameContext";
 import LittleDeath from "../Lose/LittleDeath";
 import { useHistory } from "react-router-dom";
 
+import "./LosePage.css";
+
 const LosePage = () => {
   const { playAgain } = useContext(GameContext);
   const history = useHistory();
@@ -13,19 +15,19 @@ const LosePage = () => {
   };
 
   return (
-    <div className="flex flex-col justify-evenly text-center items-center p-10 h-screen">
-      <div className="leading-loose sm:leading-relaxed text flex flex-col text-xl text-center">
+    <div className="lose-page flex flex-col justify-evenly text-center items-center p-10 h-screen">
+      <div className="leading-10 sm:leading-relaxed text flex flex-col text-xl text-center shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink">
         <h1>
-          Woah! You <span className="text-pink-600 font-semibold">DIED</span>! <i className="far fa-sad-cry fa-lg"></i>
+          Woah! You Freakin' <span className="text-pink-600 font-semibold">DIED</span>!!! <i className="far fa-sad-cry fa-lg"></i>
         </h1>
         <p>
           Don't Worry!
         </p>
-        <p>It happens to The Best of Us - even the <span className="text-pink-600 font-semibold">UNICORNS</span> </p>
+        <p>It happens to The Best of Us - even the <span className="text-pink-600 font-semibold">UNICORNS</span>! </p>
       </div>
       <LittleDeath />
       <button
-        className="shadow-sm text-white py-2 px-3 border-2 border-purple-700 rounded gradient-pink font-mono hover:shadow-xl hover:text-black"
+        className="shadow-sm text-black py-2 px-3 border-2 border-purple-700 rounded gradient-pink font-mono hover:shadow-xl hover:text-white"
         onClick={handlePlayAgain}
       >
         Play Again?
