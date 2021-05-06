@@ -16,11 +16,12 @@ const MazeWrapper = () => {
   });
 
   return (
-    <div className="bg-clouds h-screen sm:h-fill md:h-screen">
+    <div className="bg-clouds h-fill md:h-screen">
       <div className="flex flex-col justify-center items-center font-mono text-center">
-        <h2 className="pt-10">
-          Help <span className="text-pink-600">{gameData.name}</span> reach the rainbow! Move using arrow keys, WASD or buttons.
+        <h2 className="text-2xl pt-5">
+          Help <span className="text-pink-600">{gameData.name.toUpperCase()}</span> reach the <span className="text-pink-600">RAINBOW</span>!
         </h2>
+        <h5>Move using arrow keys, WASD or buttons.</h5>
         <p className="text-sm pb-2">
           <ArrowBendUpLeft className="inline" size={24} />
           Back to {" "}
