@@ -17,15 +17,15 @@ const WinPage = () => {
   return (
     <>
       <div className="win-page flex flex-col justify-evenly items-center p-10 h-screen">
-        <div className="font-mono text-xl text-center">
-          You reached the rainbow!
-        </div>
+        <h1 className="text text-center shadow-sm py-2 px-1 border-2 border-purple-700 rounded gradient-pink">
+          Woah! You've reached the <span className="text-pink-600 font-semibold">RAINBOW</span>!!!
+        </h1>
         <WinUnicornImage />
         <button
-          className="hover:shadow-md hover:border-8 py-2 px-3 border-2 border-purple-700 rounded bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 font-mono"
+          className="win-game-button shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink text text-3xl"
           onClick={handlePlayAgain}
         >
-          Restart
+          Play Again!
         </button>
       </div>
     </>

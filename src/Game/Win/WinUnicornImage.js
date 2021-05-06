@@ -6,7 +6,7 @@ const WinUnicornImage = () => {
   return (
     <ReactFloaterJs>
       <img
-        className="mx-auto sm:w-9/12 md:w-6/12 lg:w-4/12"
+        className="w-10/12 sm:w-5/12 mb-6 mt-6 sm:ml-6"
         src={WinUnicorn}
         alt="happy unicorn puking rainbow"
       />

@@ -4,7 +4,7 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
   return (
     <div className="formContainer flex justify-between items-center shadow-lg">
       <form
-        className="gradient-orchid flex flex-col border-2 border-black rounded p-2 justify-items-center items-center"
+        className="gradient-orchid flex flex-col border-2 border-black rounded px-4 py-2 justify-items-center items-center"
         onSubmit={handleSubmit}
       >
         <h3 className="font-mono text-pink-600 font-black mb-2">Game Settings</h3>
@@ -63,7 +63,7 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
           />
         </div>
         <button
-          className="gradient-pink px-2 py-1 text-white font-mono rounded shadow-md border-2 border-purple-600 hover:text-black hover:shadow-lg">
+          className="gradient-pink px-3 py-1 text-white font-mono rounded shadow-md border-2 border-purple-600 hover:text-black hover:shadow-lg">
           Start Game!{" "}
         </button>
       </form>

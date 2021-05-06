@@ -16,7 +16,7 @@ const LosePage = () => {
 
   return (
     <div className="lose-page flex flex-col justify-evenly text-center items-center p-10 h-screen">
-      <div className="leading-10 sm:leading-relaxed text flex flex-col text-xl text-center shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink">
+      <div className="leading-10 sm:leading-normal text flex flex-col text-xl text-center shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink">
         <h1>
           Woah! You Freakin' <span className="text-pink-600 font-semibold">DIED</span>!!! <i className="far fa-sad-cry fa-lg"></i>
         </h1>
@@ -27,7 +27,7 @@ const LosePage = () => {
       </div>
       <LittleDeath />
       <button
-        className="shadow-sm text-black py-2 px-3 border-2 border-purple-700 rounded gradient-pink font-mono hover:shadow-xl hover:text-white"
+        className="lose-game-button shadow-sm text-black text-3xl py-2 px-3 border-2 border-purple-700 rounded gradient-pink hover:text-white"
         onClick={handlePlayAgain}
       >
         Play Again?
