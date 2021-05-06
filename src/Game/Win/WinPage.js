@@ -17,8 +17,8 @@ const WinPage = () => {
   return (
     <>
       <div className="win-page flex flex-col justify-evenly items-center p-10 h-screen">
-        <h1 className="text text-center shadow-sm py-2 px-1 border-2 border-purple-700 rounded gradient-pink">
-          Woah! You've reached the <span className="text-pink-600 font-semibold">RAINBOW</span>!!!
+        <h1 className="text text-center shadow-xl py-2 px-1 border-2 border-purple-700 rounded gradient-pink">
+          Woah! You reached the <span className="text-pink-600 font-semibold">RAINBOW</span>!!!
         </h1>
         <WinUnicornImage />
         <button
