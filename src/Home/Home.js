@@ -6,8 +6,8 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className="p-5 h-screen leading-10 home">
-      <h1>Woah! I am a Unicorn!  <i className="far fa-laugh-beam"></i>
+    <div className="p-5 h-screen text-xl leading-10 home">
+      <h1 className="text-4xl">Woah! I am a Unicorn!  <i className="far fa-laugh-beam"></i>
       </h1>
       <UnicornImage />
       <p>No, I'm not a startup company valued at over a billion-dollars...</p>

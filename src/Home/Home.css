@@ -18,15 +18,6 @@
   justify-content: center;
 }
 
-
-h1 {
-  font-size: 2.5rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
 .start-game-button {
   background-image: linear-gradient(pink, yellow);
   font-size: x-large;
