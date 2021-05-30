@@ -11,7 +11,7 @@ const Home = () => {
       </h1>
       <UnicornImage />
       <p>No, I'm not a startup company valued at over a billion-dollars...</p>
-      <p>I'm <span className="text-red-500">EVEN</span> <span className="text-pink-600">BETTER</span>!!! ✨
+      <p>I'm the <span className="text-red-500">REAL</span> <span className="text-pink-600">DEAL</span>! ✨
       </p>
       <p>I'm a mystical creature of <span className="text-yellow-600 font-semibold">MAGIC</span>!
       </p>
