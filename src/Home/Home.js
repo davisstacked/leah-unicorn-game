@@ -6,14 +6,14 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className="p-5 h-screen text-xl leading-10 home">
+    <div className="p-10 sm:p-14 h-screen w-screen text-xl leading-10 home">
       <h1 className="text-4xl">Woah! I am a Unicorn!  <i className="far fa-laugh-beam"></i>
       </h1>
       <UnicornImage />
       <p>No, I'm not a startup company valued at over a billion-dollars...</p>
-      <p>I'm the <span className="text-red-500">REAL</span> <span className="text-pink-600">DEAL</span>! ✨
+      <p>I'm the <span className="text-red-500">REAL</span> <span className="text-red-700">DEAL</span>! 
       </p>
-      <p>I'm a mystical creature of <span className="text-yellow-600 font-semibold">MAGIC</span>!
+      <p>I'm a mystical creature of <span className="text-yellow-400 font-semibold">MAGIC</span>! ✨✨
       </p>
       <p>But I'm being hunted by a <span className="text-pink-600 font-semibold">MONSTER</span>. <i className="far fa-sad-cry fa-lg"></i></p>
       <p>Can I Trust <span className="text-green-300 font-semibold">YOU</span> to Pilot me safely to the <span className="text-purple-500 font-semibold">RAINBOW</span>?</p>

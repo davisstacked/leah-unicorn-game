@@ -16,8 +16,9 @@ const LosePage = () => {
 
   return (
     <div className="lose-page flex flex-col justify-evenly text-center items-center p-10 h-screen">
-      <div className="leading-10 sm:leading-normal text flex flex-col text-xl text-center shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink">
-        <h1>
+      <div className="leading-10 sm:leading-normal text flex flex-col text-xl text-center text-2xl shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink">
+        <h1
+          className="text-4xl">
           Woah! You Freakin' <span className="text-red-600 font-semibold">DIED</span>!!! <i className="far fa-sad-cry fa-lg"></i>
         </h1>
         <p>

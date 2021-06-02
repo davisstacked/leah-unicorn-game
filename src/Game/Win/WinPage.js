@@ -16,13 +16,16 @@ const WinPage = () => {
 
   return (
     <>
-      <div className="win-page flex flex-col justify-evenly items-center p-10 h-screen">
-        <h1 className="text text-center shadow-xl px-1 border-2 border-purple-700 rounded gradient-pink">
-          Woah! A <span className="text-pink-600 font-semibold">RAINBOW</span>! You did it!!
+      <div className="win-page text flex flex-col justify-evenly items-center p-10 h-screen">
+        <h1 className="text-white text-4xl gradient-pink text-center shadow-xl px-1 py-2 border-2 border-purple-700 rounded">
+          Woah! A <span className="text-black font-semibold">RAINBOW</span>! 
         </h1>
+        <p className="text-3xl text-white text-center shadow-xl px-1 py-2 border-2 border-purple-700 rounded gradient-pink">
+          You did it!!
+        </p>
         <WinUnicornImage />
         <button
-          className="game-button shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink text text-3xl"
+          className="game-button font-bold text-3xl shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink"
           onClick={handlePlayAgain}
         >
           Play Again!
