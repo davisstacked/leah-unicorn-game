@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="lose-page flex flex-col justify-evenly text-center items-center p-10 h-screen"
+  >
+    <div
+      class="leading-10 sm:leading-normal text flex flex-col text-xl text-center text-2xl shadow-sm py-2 px-3 border-2 border-purple-700 rounded gradient-pink"
+    >
+      <h1
+        class="text-4xl"
+      >
+        Woah! You Freakin' 
+        <span
+          class="text-red-600 font-semibold"
+        >
+          DIED
+        </span>
+        !!! 
+        <i
+          class="far fa-sad-cry fa-lg"
+        />
+      </h1>
+      <p>
+        Don't Worry!
+      </p>
+      <p>
+        It happens to The Best of Us - even the 
+        <span
+          class="gradient-pink rounded font-semibold"
+        >
+          UNICORNS
+        </span>
+        ! 
+      </p>
+    </div>
+    <div
+      class="react-floater-animated"
+    >
+      <img
+        alt="a cute little grim reaper"
+        class="w-6/12 sm:w-5/12 mb-6 mt-6 sm:ml-6"
+        src="Death.png"
+      />
+    </div>
+    <button
+      class="game-button shadow-sm text-black text-3xl py-2 px-3 border-2 border-purple-700 rounded gradient-pink hover:text-white"
+    >
+      Play Again?
+    </button>
+  </div>
+</DocumentFragment>
+`;
