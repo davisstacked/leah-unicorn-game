@@ -27,4 +27,19 @@ describe("mazeHelper functions work", () => {
     expect(addProps(apiResponse, 3)).toEqual(expectedResult);
     expect(addProps(apiResponse, 3)).toHaveLength(9);
   });
-})
+
+  test("getSpritePositions works", () => {
+    const apiResponse = {
+      pony: [62],
+      domokun: [110],
+      "end-point": [130],
+    };
+    const expectedResult = {
+      end: 130,
+      monster: 110,
+      unicorn: 62,
+    };
+    expect(getSpritePositions(apiResponse)).toEqual(expectedResult);
+    expect(getSpritePositions(apiResponse)).toBeInstanceOf(Object);
+  });
+});
