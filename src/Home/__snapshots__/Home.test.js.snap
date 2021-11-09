@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="p-10 sm:p-14 h-screen w-screen text-xl leading-10 home"
+  >
+    <h1
+      class="text-4xl"
+    >
+      Woah! I am a Unicorn!  
+      <i
+        class="far fa-laugh-beam"
+      />
+    </h1>
+    <div
+      class="react-floater-animated"
+    >
+      <img
+        alt="floating unicorn"
+        class="w-2/5 sm:w-1/4 md:w-1/6 self-center"
+        src="Unicorn.png"
+      />
+    </div>
+    <p>
+      No, I'm not a startup company valued at over a billion-dollars...
+    </p>
+    <p>
+      I'm the 
+      <span
+        class="text-red-500"
+      >
+        REAL
+      </span>
+       
+      <span
+        class="text-red-700"
+      >
+        DEAL
+      </span>
+      !
+    </p>
+    <p>
+      I'm a mystical creature of 
+      <span
+        class="text-yellow-400 font-semibold"
+      >
+        MAGIC
+      </span>
+      ! ✨✨
+    </p>
+    <p>
+      But I'm being hunted by a 
+      <span
+        class="text-pink-600 font-semibold"
+      >
+        MONSTER
+      </span>
+      . 
+      <i
+        class="far fa-sad-cry fa-lg"
+      />
+    </p>
+    <p>
+      Can I Trust 
+      <span
+        class="text-green-300 font-semibold"
+      >
+        YOU
+      </span>
+       to Pilot me safely to the 
+      <span
+        class="text-purple-500 font-semibold"
+      >
+        RAINBOW
+      </span>
+      ?
+    </p>
+    <a
+      href="/game"
+    >
+      <button
+        class="mt-4 start-game-button shadow-sm text-black text-3xl py-1 px-3 border-2 border-purple-700 rounded gradient-pink"
+      >
+        Yes! Let's go!
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;
