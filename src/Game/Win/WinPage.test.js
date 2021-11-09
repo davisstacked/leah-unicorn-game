@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 import { render } from "@testing-library/react";
-import LosePage from "./LosePage";
-import GameContextProvider from "../../Context/GameContextProvider";
-
+import WinPage from "./WinPage";
+import GameContextProvider from '../../Context/GameContextProvider';
 
 test("renders without crashing", () => {
   render(
     <GameContextProvider>
-      <LosePage />
+      <WinPage />
     </GameContextProvider>
   );
 });
@@ -15,8 +14,8 @@ test("renders without crashing", () => {
 test("matches snapshot", () => {
   const { asFragment } = render(
     <GameContextProvider>
-      <LosePage />
+      <WinPage />
     </GameContextProvider>
   );
   expect(asFragment()).toMatchSnapshot();
-});
+})
