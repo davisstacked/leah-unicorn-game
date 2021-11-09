@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="win-page text flex flex-col justify-evenly items-center p-10 h-screen"
+  >
+    <h1
+      class="text-white text-4xl gradient-pink text-center shadow-xl px-1 py-2 border-2 border-purple-700 rounded"
+    >
+      Woah! A 
+      <span
+        class="text-black font-semibold"
+      >
+        RAINBOW
+      </span>
+      !
+    </h1>
+    <p
+      class="text-3xl text-white text-center shadow-xl px-1 py-2 border-2 border-purple-700 rounded gradient-pink"
+    >
+      You did it!!
+    </p>
+    <div
+      class="react-floater-animated"
+    >
+      <img
+        alt="happy unicorn puking rainbow"
+        class="w-10/12 sm:w-5/12 mb-6 mt-6 sm:ml-6"
+        src="WinGame.png"
+      />
+    </div>
+    <button
+      class="game-button font-bold text-3xl shadow-xl hover:text-white py-2 px-3 border-2 border-purple-700 gradient-pink"
+    >
+      Play Again!
+    </button>
+  </div>
+</DocumentFragment>
+`;
