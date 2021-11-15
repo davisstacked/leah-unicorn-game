@@ -13,7 +13,9 @@ const MoveContextProvider = ({ children }) => {
 
   // sets focus on maze grid to enable hotkeys
   useEffect(() => {
+    // if we haven't gotten a unique maze from the API, return.
     if (mazeId === '') return;
+    
     const Maze = document.querySelector("[tabindex='-1']");
     Maze.focus();
   }, [mazeId]);

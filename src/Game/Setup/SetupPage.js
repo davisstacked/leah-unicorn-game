@@ -8,9 +8,12 @@ import SmallSkull from './SmallSkull';
 
 const SetupPage = () => {
   const { setGameData } = useContext(GameContext);
+  // This is everything set to zero. (size 15 is the smallest the maze can be). Pinkie pie is the default value chosen for name. 
   const initialState = { name: "Pinkie Pie", difficulty: 0, size: 15 };
   const [formData, setFormData] = useState(initialState);
 
+  // While inputting data into the form
+  // what you choose (e.target) will alter the initial state object. adding a key 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((formData) => ({
@@ -19,6 +22,7 @@ const SetupPage = () => {
     }));
   };
 
+  // when you submit a form, 
   const handleSubmit = (e) => {
     e.preventDefault();
     setGameData({ ...formData, status: "active" });

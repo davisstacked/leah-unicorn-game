@@ -1,6 +1,7 @@
 // adds index number and "east" and "south" to grid data array whenever appropriate
 // "east" and "south" used to render borders in GridCell.js
 // index used to track sprite positions in GridCell.js
+// Are not in context because only needed for rendering the maze. 
 export const addProps = (arr, size) => {
   for (let cell of arr) {
     // adds east and south

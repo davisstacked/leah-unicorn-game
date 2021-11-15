@@ -7,6 +7,7 @@ import { ArrowBendUpLeft } from "phosphor-react";
 const MazeWrapper = () => {
   const { gameData, playAgain } = useContext(GameContext);
 
+  // Conditionally sizes the maze (responsive design with tailwindCSS) based on gameData.size. external library classNames allows for simple conditional rendering. 
   const mazeWidthClasses = classNames({
     "mx-auto p-3": true,
     "sm:w-9/12 md:w-7/12 lg:w-5/12 xl:w-4/12": gameData.size <= 17,

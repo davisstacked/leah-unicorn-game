@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GameContext from "./GameContext";
 
 const GameContextProvider = ({ children }) => {
+  // Start of Game state
   const initialState = {
     status: "setup",
     difficulty: 0,

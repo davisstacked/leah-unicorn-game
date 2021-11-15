@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from "classnames";
 
 const GridCell = ({ borders, index, spritePositions }) => {
-  // conditionally renders border aroung cell based on borders prop
+  // renders a unique maze every time using the unique maze id we received from the API call 
   const gridCellClass = classNames({
     "Grid-cell": true,
     "border-east": borders.includes("east"),

@@ -9,7 +9,7 @@ class UnicornApi {
     const url = `${BASE_URL}/${endpoint}`;
 
     try {
-      return (await axios({ url, method, data })).data;
+      return (await axios({ url, data, method })).data;
     } catch (err) {
       console.error("API Error coming from CLASS API:", err.response);
       let message = err.response.data;
@@ -19,7 +19,7 @@ class UnicornApi {
 
   // individual API routes
 
-  // [POST] /pony-challenge/maze -> create new maze game
+  // [POST] /pony-challenge/maze -> create new maze game by getting a unique maze id
   static async getNewMaze(data) {
     let res = await this.request(`pony-challenge/maze`, data, "post");
     return res.maze_id;
