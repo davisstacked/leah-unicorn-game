@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import GameContext from '../../../Context/GameContext';
 import SetupForm from './SetupForm';
 import Maze from '../../../Assets/Images/Maze.png';
 import SmallUnicorn from './SmallUnicorn';
@@ -7,29 +6,6 @@ import SmallRainbow from './SmallRainbow';
 import SmallSkull from './SmallSkull';
 
 const SetupPage = () => {
-  const { setGameData } = useContext(GameContext);
-  // This is everything set to zero. (size 15 is the smallest the maze can be). Pinkie pie is the default value chosen for name. 
-  const initialState = { name: "Pinkie Pie", difficulty: 0, size: 15 };
-  const [formData, setFormData] = useState(initialState);
-
-  // While inputting data into the form
-  // what you choose (e.target) will alter the initial state object. replacing whatever is targeted in formData. 
-  const handleChange = (e) => {
-    // deconstructs e.target.value and e.target.name
-    const { name, value } = e.target;
-    setFormData((formData) => ({
-      ...formData,
-      [name]: value,
-    }));
-  };
-
-  // when you submit a form, updates the Game Context with user choices entered into the form. And by changing the status to "active", switches components now to the maze wrapper component. 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // 
-    setGameData({ ...formData, status: "active" });
-    setFormData(initialState);
-  };
 
   return (
     <div className="pt-8 text-2xl pb-8 text h-fill sm:h-screen md:h-screen lg:h-screen    bg-setup flex flex-col items-center text-center">
@@ -51,11 +27,7 @@ const SetupPage = () => {
         </p>
       <div className="sm:w-3/6 sm:mt-4 flex-col flex sm:flex-row justify-evenly items-center">
         <SmallSkull/>
-        <SetupForm
-          handleSubmit={handleSubmit}
-          handleChange={handleChange}
-          formData={formData}
-        />
+        <SetupForm />
       </div>
     </div>
   );
