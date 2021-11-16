@@ -29,12 +29,12 @@ box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10
 }
 
 .bg-setup {
-  background-image: url("../Assets/Imgs/SetupPage.jpg");
+  background-image: url("../Assets/Images/SetupPage.jpg");
   background-size: cover;
 }
 
 .bg-clouds {
   background-size: cover;
-  background: url("../Assets/Imgs/Cloudy.svg")
+  background: url("../Assets/Images/Cloudy.svg")
     no-repeat bottom center;
 }

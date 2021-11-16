@@ -1,5 +1,5 @@
 import React from "react";
-import Death from "../../Assets/Imgs/Death.png";
+import Death from "../../../Assets/Images/Death.png";
 import ReactFloaterJs from "react-floaterjs"
 
 const LittleDeath = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import LosePage from "./LosePage";
-import GameContextProvider from "../../Context/GameContextProvider";
+import GameContextProvider from "../../../Context/GameContextProvider";
 
 
 test("renders without crashing", () => {

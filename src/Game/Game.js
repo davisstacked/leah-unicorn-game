@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import GameContext from '../Context/GameContext';
 import SetupPage from "./Pages/Setup/SetupPage";
 import MazePage from "./Pages/Maze/MazePage";
-import WinPage from "./Win/WinPage";
-import LosePage from './Lose/LosePage';
+import WinPage from "./Pages/Win/WinPage";
+import LosePage from './Pages/Lose/LosePage';
 
 import "./Game.css";
 

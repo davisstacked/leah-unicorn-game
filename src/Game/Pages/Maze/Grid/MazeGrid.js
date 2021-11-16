@@ -55,7 +55,7 @@ const MazeGrid = () => {
     if (mazeId === "") return;
     const setUpNewMaze = async () => {
       try {
-        // retrieves array where each array item represents 1 maze grid cell
+        // retrieves array where each array index represents 1 maze grid cell
         const res = await UnicornApi.getMazeCurrentState(mazeId);
         // adds east, south borders + index number to array items
         const completeGridData = addProps(res.data, parseInt(gameData.size));

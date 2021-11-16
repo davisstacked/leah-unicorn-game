@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import GameContext from '../../../Context/GameContext';
 import SetupForm from './SetupForm';
-import Maze from '../../../Assets/Imgs/Maze.png';
+import Maze from '../../../Assets/Images/Maze.png';
 import SmallUnicorn from './SmallUnicorn';
 import SmallRainbow from './SmallRainbow';
 import SmallSkull from './SmallSkull';

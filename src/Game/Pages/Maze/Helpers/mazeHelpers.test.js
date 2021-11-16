@@ -28,7 +28,7 @@ describe("mazeHelper functions work", () => {
     expect(addProps(apiResponse, 3)).toHaveLength(9);
   });
 
-  test("getSpritePositions works", () => {
+  test("getSpritePositions works", async () => {
     const apiResponse = {
       pony: [62],
       domokun: [110],

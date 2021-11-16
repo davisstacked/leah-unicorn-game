@@ -1,5 +1,5 @@
 import React from "react";
-import WinUnicorn from "../../Assets/Imgs/WinGame.png";
+import WinUnicorn from "../../../Assets/Images/WinGame.png";
 import ReactFloaterJs from "react-floaterjs";
 
 const WinUnicornImage = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import MazeWrapper from "./MazePage";
+import MazePage from "./MazePage";
 import GameContextProvider from "../../../Context/GameContextProvider";
 import AudioContextProvider from "../../../Context/AudioContextProvider";
 import MoveContextProvider from "../../../Context/MoveContextProvider";
@@ -10,7 +10,7 @@ test("renders without crashing", () => {
     <GameContextProvider>
       <AudioContextProvider>
         <MoveContextProvider>
-          <MazeWrapper />
+          <MazePage />
         </MoveContextProvider>
       </AudioContextProvider>
     </GameContextProvider>
@@ -22,7 +22,7 @@ test("matches snapshot", () => {
     <GameContextProvider>
       <AudioContextProvider>
         <MoveContextProvider>
-          <MazeWrapper />
+          <MazePage />
         </MoveContextProvider>
       </AudioContextProvider>
     </GameContextProvider>

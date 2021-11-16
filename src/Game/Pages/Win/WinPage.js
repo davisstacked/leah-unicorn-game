@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import GameContext from "../../Context/GameContext";
+import GameContext from "../../../Context/GameContext";
 import { useHistory } from "react-router-dom";
 import WinUnicornImage from "./WinUnicornImage";
 
