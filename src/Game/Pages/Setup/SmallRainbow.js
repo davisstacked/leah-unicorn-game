@@ -1,5 +1,5 @@
 import React from "react";
-import Rainbow from "../../Assets/Imgs/rainbow.png";
+import Rainbow from "../../../Assets/Imgs/rainbow.png";
 import ReactFloaterJs from "react-floaterjs";
 
 const SmallRainbow = () => {

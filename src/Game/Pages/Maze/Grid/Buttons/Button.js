@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import MoveContext from "../../../Context/MoveContext";
+import MoveContext from "../../../../../Context/MoveContext";
 
 const Button = ({ children, direction }) => {
   const { handleMove } = useContext(MoveContext);

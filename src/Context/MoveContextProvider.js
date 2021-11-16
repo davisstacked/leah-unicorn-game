@@ -3,7 +3,7 @@ import MoveContext from './MoveContext';
 import UnicornApi from '../API/UnicornApi';
 import GameContext from './GameContext';
 import AudioContext from './AudioContext';
-import { getSpritePositions } from '../Game/Maze/MazeHelpers';
+import { getSpritePositions } from '../Game/Pages/Maze/Helpers/MazeHelpers';
 
 const MoveContextProvider = ({ children }) => {
   const [spritePositions, setSpritePositions] = useState({});
@@ -15,7 +15,7 @@ const MoveContextProvider = ({ children }) => {
   useEffect(() => {
     // if we haven't gotten a unique maze from the API, return.
     if (mazeId === '') return;
-    
+
     const Maze = document.querySelector("[tabindex='-1']");
     Maze.focus();
   }, [mazeId]);

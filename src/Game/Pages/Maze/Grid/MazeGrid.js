@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import UnicornApi from "../../API/UnicornApi";
-import GameContext from "../../Context/GameContext";
-import MoveContext from "../../Context/MoveContext";
-import { addProps, getSpritePositions } from "./MazeHelpers";
+import UnicornApi from "../../../../API/UnicornApi";
+import GameContext from "../../../../Context/GameContext";
+import MoveContext from "../../../../Context/MoveContext";
+import { addProps, getSpritePositions } from "../Helpers/MazeHelpers";
 import { v4 as uuid } from "uuid";
 import GridCell from "./GridCell";
-import "./Maze.css"
+import "./GridCell.css"
 import MoveButtons from "./Buttons/MoveButtons";
-import Keys from "../Hotkeys/Handlers";
+import HotKeys from "./Hotkeys/HotKeyHandlers";
 import RotatingHorse from "./Spinner";
 
 const MazeGrid = () => {
@@ -71,7 +71,7 @@ const MazeGrid = () => {
 
   return (
     <>
-      <Keys>
+      <HotKeys>
         <MoveButtons handleMove={handleMove} />
         {isLoading ? (
             <RotatingHorse />
@@ -92,7 +92,7 @@ const MazeGrid = () => {
             })}
           </div>
         )}
-      </Keys>
+      </HotKeys>
     </>    
   );
 };

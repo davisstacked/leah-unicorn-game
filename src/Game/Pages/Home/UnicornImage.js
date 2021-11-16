@@ -1,5 +1,5 @@
 import React from 'react';
-import Unicorn from '../Assets/Imgs/Unicorn.png';
+import Unicorn from '../../../Assets/Imgs/Unicorn.png';
 import ReactFloaterJs from 'react-floaterjs';
 
 const UnicornImage = () => {

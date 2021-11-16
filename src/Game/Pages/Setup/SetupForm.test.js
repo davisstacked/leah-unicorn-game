@@ -1,10 +1,10 @@
 import React from "react";
 import { render, fireEvent, act } from "@testing-library/react";
-import Game from "../Game";
+import Game from "../../Game";
 import SetupPage from "./SetupPage";
-import GameContextProvider from "../../Context/GameContextProvider";
-import MoveContextProvider from "../../Context/MoveContextProvider";
-import AudioContextProvider from "../../Context/AudioContextProvider";
+import GameContextProvider from "../../../Context/GameContextProvider";
+import MoveContextProvider from "../../../Context/MoveContextProvider";
+import AudioContextProvider from "../../../Context/AudioContextProvider";
 
 describe("form submission works", () => {
   test("submits form", () => {

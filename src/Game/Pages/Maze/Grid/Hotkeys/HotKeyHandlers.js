@@ -1,8 +1,8 @@
 import { HotKeys } from "react-hotkeys";
 import React, { useContext } from "react";
-import MoveContext from "../../Context/MoveContext";
+import MoveContext from "../../../../../Context/MoveContext";
 
-const Keys = ({ children }) => {
+const HotKeysHandlers = ({ children }) => {
   const { handleMove } = useContext(MoveContext);
   const keyMap = {
     MOVE_UP: ["up", "w"],
@@ -37,4 +37,4 @@ const Keys = ({ children }) => {
   );
 };
 
-export default Keys;
+export default HotKeysHandlers;

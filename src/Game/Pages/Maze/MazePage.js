@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import GameContext from "../../Context/GameContext";
-import MazeGrid from "./MazeGrid";
+import GameContext from "../../../Context/GameContext";
+import MazeGrid from "./Grid/MazeGrid";
 import classNames from "classnames";
 import { ArrowBendUpLeft } from "phosphor-react";
 
-const MazeWrapper = () => {
+const MazePage = () => {
   const { gameData, playAgain } = useContext(GameContext);
 
   // Conditionally sizes the maze (responsive design with tailwindCSS) based on gameData.size. external library classNames allows for simple conditional rendering. 
@@ -43,4 +43,4 @@ const MazeWrapper = () => {
   );
 };
 
-export default MazeWrapper;
+export default MazePage;

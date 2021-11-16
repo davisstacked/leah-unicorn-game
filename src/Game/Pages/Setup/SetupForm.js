@@ -2,7 +2,7 @@ import React from 'react';
 
 // SETUP FORM 
 // deconstructed props as params. Props passed down to form from setup page.
-const Form = ({ handleSubmit, handleChange, formData }) => {
+const SetupForm = ({ handleSubmit, handleChange, formData }) => {
   return (
     <div className="formContainer flex justify-between items-center shadow-lg">
       <form
@@ -73,4 +73,4 @@ const Form = ({ handleSubmit, handleChange, formData }) => {
   );
 };
 
-export default Form;
+export default SetupForm;

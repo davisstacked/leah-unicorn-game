@@ -5,7 +5,7 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import Home from '../Home/Home';
+import Home from '../Game/Pages/Home/Home';
 import Game from '../Game/Game';
 
 const Routes = () => {

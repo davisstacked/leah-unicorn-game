@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import GameContext from '../Context/GameContext';
-import SetupPage from "./Setup/SetupPage";
-import MazeWrapper from "./Maze/MazeWrapper";
+import SetupPage from "./Pages/Setup/SetupPage";
+import MazePage from "./Pages/Maze/MazePage";
 import WinPage from "./Win/WinPage";
 import LosePage from './Lose/LosePage';
 
@@ -13,7 +13,7 @@ const Game = () => {
     <div>
       {/* based on initial (and updated) game state "gameData" in GameContextProvider */}
       {gameData.status === "setup" && <SetupPage />}
-      {gameData.status === "active" && <MazeWrapper />}
+      {gameData.status === "active" && <MazePage />}
       {gameData.status === "won" && <WinPage />}
       {gameData.status === "over" && <LosePage />}
     </div>
