@@ -8,7 +8,7 @@ import Win from '../Assets/Audio/win.wav';
 
 const AudioContextProvider = ({ children }) => {
   // plays on an illegal move
-  const [playIllegal] = useSound(Bump, { volume: 0.25 });
+  const [playIllegal] = useSound(Bump, { volume: 0.75 });
   
   // plays on a legal move
   const [playLegal] = useSound(Move, { volume: 0.25 });

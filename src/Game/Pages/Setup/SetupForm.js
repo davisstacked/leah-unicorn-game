@@ -19,10 +19,9 @@ const SetupForm = () => {
     }));
   };
 
-  // when you submit a form, updates the Game Context with user choices entered into the form. And by changing the status to "active", switches components now to the maze wrapper component. 
+  // when you submit a form, updates the Game Context with user choices entered into the form. And by changing the status to "active", switches components now to the maze page component. 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // 
     setGameData({ ...formData, status: "active" });
     setFormData(initialState);
   };
