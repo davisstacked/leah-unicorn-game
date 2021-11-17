@@ -1,8 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import GameContext from '../../../Context/GameContext';
 
 const SetupForm = () => {
-  const { formData, setFormData, handleSubmit } = useContext(GameContext)
+  const initialState = {
+    difficulty: 0,
+    size: 15,
+    name: "Pinkie Pie",
+  };
+  const { setGameData } = useContext(GameContext)
+  const [formData, setFormData] = useState(initialState)
 
   // While inputting data into the form
   // what you choose (e.target) will alter the initial state object. replacing whatever is targeted in formData. 
@@ -16,10 +22,20 @@ const SetupForm = () => {
   };
 
 
+  // when you submit a form, updates the Game Context with user choices entered into the form. And by changing the status to "active", switches components now to the maze page component. 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setGameData({ ...formData, status: "active" });
+    setFormData(initialState);
+  };
+
+
+
   return (
     <div className="formContainer flex justify-between items-center shadow-lg">
       <form
         className="gradient-orchid flex flex-col border-2 border-black rounded px-4 py-1 justify-items-center items-center shadow-md"
+        // updates Game State in Game Component with form selections. loads Maze Page Component by updating the status to active 
         onSubmit={handleSubmit}
       >
         <h3 className="font-mono text-pink-600 font-black mb-2">Game Settings</h3>

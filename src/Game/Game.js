@@ -8,7 +8,9 @@ import LosePage from './Pages/Lose/LosePage';
 import "./Game.css";
 
 const Game = () => {
+
   const { gameData } = useContext(GameContext);
+
   return (
     <div>
       {/* based on initial (and updated) game state "gameData" in GameContextProvider */}
