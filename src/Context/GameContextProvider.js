@@ -1,6 +1,5 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import GameContext from "./GameContext";
-import AudioContext from "./AudioContext";
 
 
 const GameContextProvider = ({ children }) => {
@@ -12,19 +11,12 @@ const GameContextProvider = ({ children }) => {
     name: "",
   };
   const [gameData, setGameData] = useState(initialState);
-  
-  const { playGameOver, playGameWon } = useContext(AudioContext);
 
-  // checks if game is won or lost based on API results. Sets Status to either "won" or "over"
-  const checkForGameOver = (res) => {
-    if (res.state === 'won') {
-      playGameWon();
-      setGameData({ ...gameData, status: "won" });
-    } else if (res.state === 'over') {
-      playGameOver();
-      setGameData({ ...gameData, status: 'over' });
-    }
-  };
+
+  // In GAME.JS the "status" is used to conditionally render SetupPage, MazePage, LosePage, WinPage
+  // SetupForm.js when submitted, changes status to "active" and updates GameData to status: "active". 
+
+  // MoveContextProvider.js function checkForGameOver sets gameData.status to either "won" or "over"
   
   // restarts game by setting gameData.status back to "setup"
   const playAgain = () => {
@@ -36,9 +28,6 @@ const GameContextProvider = ({ children }) => {
       gameData,
       setGameData,
       playAgain,
-      checkForGameOver,
-      playGameOver,
-      playGameWon,
     }}>
       {children}
     </GameContext.Provider>

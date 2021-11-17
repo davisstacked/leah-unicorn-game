@@ -6,8 +6,8 @@ import AudioContext from './AudioContext';
 
 const MoveContextProvider = ({ children }) => {
   const [spritePositions, setSpritePositions] = useState({});
-  const { checkForGameOver } = useContext(GameContext);
-  const { playLegal, playIllegal } = useContext(AudioContext);
+  const { gameData, setGameData } = useContext(GameContext);
+  const { playLegal, playIllegal, playGameOver, playGameWon } = useContext(AudioContext);
   const [mazeId, setMazeId] = useState('');
 
   // sets focus on maze grid to enable hotkeys
@@ -51,6 +51,18 @@ const MoveContextProvider = ({ children }) => {
       setSpritePositions(getSpritePositions(res));
     } catch (e) {
       console.log(e);
+    }
+  };
+
+
+  // checks if game is won or lost based on API results. Sets Status to either "won" or "over"
+  const checkForGameOver = (res) => {
+    if (res.state === 'won') {
+      playGameWon();
+      setGameData({ ...gameData, status: "won" });
+    } else if (res.state === 'over') {
+      playGameOver();
+      setGameData({ ...gameData, status: 'over' });
     }
   };
 
