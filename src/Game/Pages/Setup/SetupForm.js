@@ -1,12 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import GameContext from '../../../Context/GameContext';
 
 const SetupForm = () => {
-  const { setGameData } = useContext(GameContext)
-
-  // This is everything set to zero. (size 15 is the smallest the maze can be). Pinkie pie is the default value chosen for name. 
-  const initialState = { name: "Pinkie Pie", difficulty: 0, size: 15 };
-  const [formData, setFormData] = useState(initialState);
+  const { formData, setFormData, handleSubmit } = useContext(GameContext)
 
   // While inputting data into the form
   // what you choose (e.target) will alter the initial state object. replacing whatever is targeted in formData. 
@@ -19,12 +15,6 @@ const SetupForm = () => {
     }));
   };
 
-  // when you submit a form, updates the Game Context with user choices entered into the form. And by changing the status to "active", switches components now to the maze page component. 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setGameData({ ...formData, status: "active" });
-    setFormData(initialState);
-  };
 
   return (
     <div className="formContainer flex justify-between items-center shadow-lg">

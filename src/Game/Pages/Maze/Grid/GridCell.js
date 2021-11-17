@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from "classnames";
 
+// Props from MazeGrid
 const GridCell = ({ borders, index, spritePositions }) => {
   // renders a unique maze every time using the unique maze id we received from the API call 
   const gridCellClass = classNames({

@@ -3,12 +3,11 @@ import MoveContext from './MoveContext';
 import UnicornApi from '../API/UnicornApi';
 import GameContext from './GameContext';
 import AudioContext from './AudioContext';
-import { getSpritePositions } from '../Game/Pages/Maze/Helpers/MazeHelpers';
 
 const MoveContextProvider = ({ children }) => {
   const [spritePositions, setSpritePositions] = useState({});
-  const { gameData, setGameData } = useContext(GameContext);
-  const { playLegal, playIllegal, playGameOver, playGameWon } = useContext(AudioContext);
+  const { checkForGameOver } = useContext(GameContext);
+  const { playLegal, playIllegal } = useContext(AudioContext);
   const [mazeId, setMazeId] = useState('');
 
   // sets focus on maze grid to enable hotkeys
@@ -24,6 +23,10 @@ const MoveContextProvider = ({ children }) => {
   const handleMove = (direction) => {
     const move = async (data) => {
       try {
+    // returns {} with:
+    //   "state": "active" || "over" || "Won"
+    //   "state-result": "Move accepted" || "Can't walk in there" "
+    // }
         const res = await UnicornApi.makeMove(data, mazeId);
         if (res["state-result"] === "Move accepted") {
           playLegal();
@@ -31,6 +34,7 @@ const MoveContextProvider = ({ children }) => {
         } else {
           playIllegal();
         }
+        // 
         checkForGameOver(res);
       } catch (e) {
         console.log(e);
@@ -38,6 +42,7 @@ const MoveContextProvider = ({ children }) => {
     };
     move({ direction });
   }
+  
   
   // updates positions of sprites following a move
   const updatePositions = async () => {
@@ -48,28 +53,29 @@ const MoveContextProvider = ({ children }) => {
       console.log(e);
     }
   };
-  
-  // checks if game is won or lost
-  const checkForGameOver = (res) => {
-    if (res.state === 'won') {
-      playGameWon();
-      setGameData({ ...gameData, status: "won" });
-    } else if (res.state === 'over') {
-      playGameOver();
-      setGameData({ ...gameData, status: 'over' });
-    }
+
+  // retrieves sprites positions (unicorn, monster, end) from API call result
+// The full API call includes the maze etc.
+// This function simplifies our object to only sprite positions. 
+const getSpritePositions = (res) => {
+  return {
+    end: res['end-point'][0],
+    monster: res.domokun[0],
+    unicorn: res.pony[0],
   };
+};
+  
     
   return (
     <MoveContext.Provider
       value={{
         handleMove,
         updatePositions,
-        checkForGameOver,
         mazeId,
         setMazeId,
         spritePositions,
-        setSpritePositions
+        setSpritePositions,
+        getSpritePositions
       }}
     >
       {children}

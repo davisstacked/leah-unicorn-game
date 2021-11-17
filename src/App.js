@@ -7,13 +7,13 @@ import AudioContextProvider from './Context/AudioContextProvider';
 function App() {
   return (
     <div className="App">
-      <GameContextProvider>
-        <AudioContextProvider>
+      <AudioContextProvider>
+        <GameContextProvider>
           <MoveContextProvider>
             <Routes />
           </MoveContextProvider>
-        </AudioContextProvider>
-      </GameContextProvider>
+        </GameContextProvider>
+      </AudioContextProvider>
     </div>
   );
 }

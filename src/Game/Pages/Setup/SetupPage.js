@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import SetupForm from './SetupForm';
 import Maze from '../../../Assets/Images/Maze.png';
 import SmallUnicorn from './SmallUnicorn';
