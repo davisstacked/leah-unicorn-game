@@ -56,7 +56,7 @@ The deployed version of the game can be found below.
 #### Maze Rendering
 * maze drawing utilises CSS properties `gridTemplateColumns` and `border-top`, `border-bottom`, `border-left`, `border-right`
 * API call retrieves grid data array, which is then transformed using helper functions to include additional items `east` and `south` wherever appropriate, as well as `index number`
-* transformed grid data array mapped over to render individual `GridCell` components, passing down `borders`, `index` and `sprite positions` as props
+* transformed grid data array mapped over to render individual `GridCell` components, passing down `borders`, `index` and `sprite positions` as props from `MazeGrid` and as context from `MoveContext`
 * `GridCell` uses props to conditionally render borders & sprites
 
 #### Use of external libraries
